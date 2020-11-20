@@ -31,11 +31,11 @@ a {
   align-items: center;
 }
 
-main {
+header {
   width: 35vw;
 }
 
-main .title {
+header .title {
   font-size: 46px;
   font-weight: 700;
   line-height: 56px;
@@ -44,7 +44,7 @@ main .title {
   margin-bottom: 5vh;
 }
 
-main .description {
+header .description {
   color: #FFF2F3;
 }
 

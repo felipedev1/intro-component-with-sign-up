@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: hsl(0, 100%, 74%);
+  background-image: url('../images/bg-intro-desktop.png');
+}
+
+body, input, textarea {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attribution { 
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  font-size: 11px; text-align: center;
+}
+.attribution a { 
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}

@@ -5,14 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Intro component with sign up form</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
   <div class="container">
@@ -23,27 +19,27 @@
         but understanding how developers think is invaluable. 
       </p>
     </main>
-  </div>
-  <div class="register">
-    <div class="scheme">
-      <strong>Try it free 7 days</strong> then $20/mo. thereafter
+    <div class="register">
+      <div class="scheme">
+        <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+      </div>
+      <form>
+        <input type="text" placeholder="First Name ">
+        <input type="text" placeholder="Last Name">
+        <input type="text" placeholder="Email Address">
+        <input type="text" placeholder="Password">
+        <button type="submit">Claim your free trial</button>
+        <p class="terms">
+          By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
+        </p>
+      </form>
     </div>
-    <form>
-      <input type="text" placeholder="First Name ">
-      <input type="text" placeholder="Last Name">
-      <input type="text" placeholder="Email Address">
-      <input type="text" placeholder="Password">
-      <button type="submit">Claim your free trial</button>
-      <p class="terms">
-        By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
-      </p>
-    </form>
   </div>
   
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/felipedev1" target="_blank">Felipe</a>.
     </p>
   </footer>
 </body>

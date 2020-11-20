@@ -18,21 +18,115 @@ body, input, textarea {
   font-size: 16px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   min-height: 100vh;
-  width: 100vw;
+  width: 77vw;
+  margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.attribution { 
+main {
+  width: 35vw;
+}
+
+main .title {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0.03em;
+  color: #FFF;
+  margin-bottom: 5vh;
+}
+
+main .description {
+  color: #FFF2F3;
+}
+
+.register .scheme {
+  width: 37.5vw;
+  padding: 2.5vh;
+  background-color: hsl(248, 32%, 49%);
+  box-shadow: 0 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 2.5vh;
+}
+
+.register .scheme p {
+  text-align: center;
+  color: #FFF;
+  font-weight: 400;
+}
+
+.register form {
+  width: 37.5vw;
+  display: flex;
+  flex-direction: column;
+  padding: 5vh;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register form input {
+  padding: 2.5vh 20px;
+  margin-bottom: 2.5vh;
+  border-radius: 8px;
+  border: 1px solid hsl(246, 25%, 77%);
+  font-weight: 600;
+  color: hsl(249, 10%, 26%);
+}
+
+.register form input:focus {
+  outline: none;
+  border: 1px solid hsl(249, 10%, 26%);
+}
+
+.register form button {
+  margin-bottom: 2.5vh;
+  padding: 2.5vh 0;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(154, 59%, 51%);
+  box-shadow: 0 5px 0 1px #32B87D;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFF;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.register form button:focus {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.register .terms {
+  text-align: center;
+  color:hsl(246, 25%, 77%);
+  font-size: 12px;
+}
+
+.register .terms a {
+  color: hsl(0, 100%, 74%);
+  font-weight: 600;
+}
+
+
+
+.attribution {
+  color: #FFF; 
   position: absolute;
   bottom: 2px;
   right: 10px;
   font-size: 11px; text-align: center;
 }
 .attribution a { 
-  text-decoration: none;
   color: hsl(228, 45%, 44%);
 }

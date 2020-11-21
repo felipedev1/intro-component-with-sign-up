@@ -23,11 +23,27 @@
       <div class="scheme">
         <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
       </div>
-      <form>
-        <input type="text" name="name" placeholder="First Name">
-        <input type="text" name="lastName" placeholder="Last Name">
-        <input type="email" name="email" placeholder="Email Address">
-        <input type="password" name="password" placeholder="Password">
+      <form id="signup">
+        <div class="field-block">
+          <input required type="text" name="name" placeholder="First Name">
+          <img src="./images/icon-error.svg" alt="warning" class="warning">
+          <span class="error-message"></span>
+        </div>
+        <div class="field-block">
+          <input required type="text" name="lastName" placeholder="Last Name">
+          <img src="./images/icon-error.svg" alt="warning" class="warning">
+          <span class="error-message"></span>
+        </div>
+        <div class="field-block">
+          <input required type="email" name="email" placeholder="Email Address">
+          <img src="./images/icon-error.svg" alt="warning" class="warning">
+          <span class="error-message"></span>
+        </div>
+        <div class="field-block">
+          <input required type="password" name="password" placeholder="Password">
+          <img src="./images/icon-error.svg" alt="warning" class="warning">
+          <span class="error-message"></span>
+        </div>
         <button type="submit">Claim your free trial</button>
         <p class="terms">
           By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
@@ -42,5 +58,6 @@
       Coded by <a href="https://github.com/felipedev1" target="_blank">Felipe</a>.
     </p>
   </footer>
+  <script src="./js/formValidation.js"></script>
 </body>
 </html>

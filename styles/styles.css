@@ -73,18 +73,39 @@ header .description {
   box-shadow: 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.register form input {
-  padding: 2.5vh 20px;
+.register form .field-block {
+  position: relative;
   margin-bottom: 2.5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.register form .field-block input {
+  width: 100%;
+  padding: 2.5vh 20px;
   border-radius: 8px;
   border: 1px solid hsl(246, 25%, 77%);
   font-weight: 600;
   color: hsl(249, 10%, 26%);
 }
 
-.register form input:focus {
+.register form .field-block input:focus {
   outline: none;
   border: 1px solid hsl(249, 10%, 26%);
+}
+
+.register form .field-block .warning {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 2.5vh;
+}
+
+.register form .field-block .error-message {
+  align-self: flex-end;
+  color: red;
+  font-size: 12px;
+  font-style: italic;
 }
 
 .register form button {

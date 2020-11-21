@@ -48,8 +48,13 @@ header .description {
   color: #FFF2F3;
 }
 
+.register {
+  margin-left: 5vw;
+  flex: 1;
+}
+
 .register .scheme {
-  width: 37.5vw;
+  width: 100%;
   padding: 2.5vh;
   background-color: hsl(248, 32%, 49%);
   box-shadow: 0 8px rgba(0, 0, 0, 0.1);
@@ -64,7 +69,7 @@ header .description {
 }
 
 .register form {
-  width: 37.5vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 5vh;
@@ -137,6 +142,41 @@ header .description {
 .register .terms a {
   color: hsl(0, 100%, 74%);
   font-weight: 600;
+}
+
+@media(max-width: 768px) {
+  .container {
+    width: 90vw;
+  }
+
+  header .title {
+    font-size: 40px;
+    line-height: 42px;
+  }
+}
+
+@media(max-width: 550px) {
+  body {
+    padding: 60px 0;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  header {
+    width: 90vw;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  header .title {
+    font-size: 32px;
+    line-height: 34px;
+  }
+
+  .register {
+    margin-left: 0;
+  }
 }
 
 
